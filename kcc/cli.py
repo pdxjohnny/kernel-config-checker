@@ -5,10 +5,14 @@ import sys
 
 from .kconfig import Kconfig
 
-def usage() -> None:
+def usage(*args) -> None:
     print("Usage:")
+    # Exit clean on help request or error on invalid arguments
     print("\tkernel-config-checker.py <configfile>")
-    exit(0)
+    if '-h' in sys.argv \
+            or '--help' in sys.argv:
+        sys.exit(0)
+    sys.exit(1)
 
 def cli() -> None:
     if len(sys.argv) > 2 \
@@ -22,5 +26,8 @@ def cli() -> None:
     else:
         with open(sys.argv[1], "r") as input_file:
             results = kconfig.check(input_file)
+    if not results:
+        sys.exit(0)
     for opt, msg in results.items():
         print(opt, msg)
+    sys.exit(1)
