@@ -9,7 +9,7 @@ Install
 
 .. code-block:: console
 
-    python3.6 -m pip install --user -e \
+    python3.6 -m pip install --user \
       git+https://github.intel.com/avandeve/kernel-config-checker#egg=kcc
 
 Usage
