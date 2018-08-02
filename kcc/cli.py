@@ -11,7 +11,9 @@ def usage() -> None:
     exit(0)
 
 def cli() -> None:
-    if len(sys.argv) != 1 and len(sys.argv) != 2:
+    if len(sys.argv) > 2 \
+            or '-h' in sys.argv \
+            or '--help' in sys.argv:
         usage()
 
     kconfig = Kconfig.default()
