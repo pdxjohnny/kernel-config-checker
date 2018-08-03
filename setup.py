@@ -22,7 +22,7 @@ setup(
     author='Arjan van de Ven',
     author_email='arjan@linux.intel.com',
     url='https://github.intel.com/avandeve/kernel-config-checker',
-    license='MIT',
+    license='GPL-3.0',
 
     keywords=[
         '',
@@ -31,8 +31,7 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: GPL-3.0 License',
         'Natural Language :: English',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3.6',
