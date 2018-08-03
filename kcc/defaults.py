@@ -21,6 +21,7 @@ MUST_BE_SET["CONFIG_DEBUG_NOTIFIERS"] = "Needed to protect against targeted corr
 MUST_BE_SET["CONFIG_DEBUG_LIST"] = "Needed to protect against targeted corruption by rootkits"
 MUST_BE_SET["CONFIG_DEBUG_SG"] = "Needed to protect against targeted corruption by rootkits"
 MUST_BE_SET["CONFIG_SCHED_STACK_END_CHECK"] = "Needed to protect against targeted corruption by rootkits"
+MUST_BE_SET["CONFIG_RETPOLINE"] = "Needed to protect against Spectre V2"
 
 
 MUST_BE_SET["CONFIG_SECCOMP"] = "Seccomp is a security feature needed by systemd"
